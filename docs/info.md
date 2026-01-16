@@ -9,12 +9,15 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This project uses an SPI-controlled PWM (Pulse Width Modulation) peripheral for the Tiny Tapeout ASIC. The design features:
+- SPI interface for serial communication and control
+- PWM output signal generation with configurable duty cycle
+- 16-bit control registers for output enable and PWM configuration
 
 ## How to test
 
-Explain how to use your project
+The design can be tested using the provided Cocotb testbench. Load the SPI commands to set the PWM duty cycle and observe the PWM output on the designated output pins.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+No external hardware required for basic operation.
